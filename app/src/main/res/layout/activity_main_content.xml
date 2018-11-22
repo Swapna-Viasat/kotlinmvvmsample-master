@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation" />
+
+    <com.ms.kotlinmvvmsample.view.bottomnavigation.BottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <com.ms.kotlinmvvmsample.view.bottomnavigation.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_home_24dp"
+            app:tab_text="@string/bottom_navigation_tab_home" />
+
+        <com.ms.kotlinmvvmsample.view.bottomnavigation.TabItem
+            android:id="@+id/tabLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:icon="@drawable/ic_location_on_24dp"
+            app:tab_text="@string/bottom_navigation_tab_location" />
+
+        <com.ms.kotlinmvvmsample.view.bottomnavigation.TabItem
+            android:id="@+id/tabSetting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_settings_24dp"
+            app:tab_text="@string/bottom_navigation_tab_setting" />
+
+    </com.ms.kotlinmvvmsample.view.bottomnavigation.BottomNavigation>
+
+</RelativeLayout>

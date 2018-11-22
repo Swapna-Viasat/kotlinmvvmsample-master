@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowsBackground"
+    tools:context="com.ms.kotlinmvvmsample.home.Home2Fragment">
+
+    <TextView
+        android:id="@+id/homeText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello Home Fragment 2" />
+
+    <Button
+        android:id="@+id/home2Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeText2"
+        android:text="Go to HomeFragment 3" />
+
+</RelativeLayout>
