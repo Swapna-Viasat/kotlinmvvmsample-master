@@ -5,12 +5,6 @@ import android.arch.persistence.room.Embedded
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
-/**
- *
- * @author Majid Mohammadnejad
- * @version 1.0
- * @since 4/16/18
- */
 
 @Entity
 data class LocalWeather(
